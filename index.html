@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Encriptador!!</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/5602/5602097.png" alt="signo de pregunta">
+        <h1 id="titulo"></h1>
+    </header>
+
+    <main>
+        <section class="contenedorUno">
+            <div class="contenedorUno-textArea">
+                <div class="paper">
+                    <textarea name="ingreso" id="ingreso" cols="50" rows="5" oninput="encriptacion()"
+                        placeholder="Ingresa una palabra o frase..."></textarea>
+                </div>
+            </div>
+
+            <div class="contenedorUno-parrafos-botones">
+                <div class="contenedorUno-parrafos">
+                    <p id="parrafo"></p>
+                    <p id="aviso"><span class="material-symbols-outlined">warning</span>Ingresa solo letras minusculas
+                        sin
+                        acentos</p>
+                </div>
+                <div class="botones">
+                    <button id="btn-encriptar" class="boton" onclick="encriptado()">Encriptar</button>
+                    <button id="btn-desencriptar" class="boton" onclick="desencriptado()">Desencriptar</button>
+                    <button id="btn-copiar" class="boton" onclick="copiadoDeTexto()">Copie el texto</button>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="parrafoFooter">copiright © todos los derechos reservados a cualquiera que lo mejore</p>
+        <p class="parrafoFooter">MUCHAS GRACIAS POR SU VISITA</p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>
