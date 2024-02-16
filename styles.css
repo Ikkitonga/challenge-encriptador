@@ -181,9 +181,9 @@ main {
 }
 
 
-/* ESTILOS PARA CELULARES 320px*/
+/* ESTILOS PARA CELULARES */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 620px) {
 
     header {
         margin: 1rem;
