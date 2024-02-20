@@ -69,12 +69,28 @@ function desencriptado() {
 
 /* funcion para copiar el texto de la caja */
 function copiadoDeTexto(){
-    let textoCopiado = document.getElementById("ingreso").value;
-    let botonCopiar = document.getElementById("btn-copiar");
 
-    navigator.clipboard.writeText(textoCopiado);
-    alert("texto copiado");
-}
+        let textoCopiado = document.getElementById("ingreso").value;
+        
+        // Crear un elemento input temporal
+        let inputTemp = document.createElement("input");
+        inputTemp.setAttribute("value", textoCopiado);
+        document.body.appendChild(inputTemp);
+        
+        // Seleccionar el texto en el input temporal
+        inputTemp.select();
+        inputTemp.setSelectionRange(0, 99999); // Para dispositivos móviles
+        
+        // Ejecutar el comando de copiado
+        document.execCommand("copy");
+        
+        // Eliminar el input temporal
+        document.body.removeChild(inputTemp);
+        
+        // Mostrar mensaje de éxito
+        alert("Texto copiado");
+    }
+
 
 
 /* funcion con la logica de encriptar */
