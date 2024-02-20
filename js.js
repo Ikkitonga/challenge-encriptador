@@ -72,7 +72,7 @@ function copiadoDeTexto(){
 
         let textoCopiado = document.getElementById("ingreso").value;
         
-        // Crear un elemento input temporal
+        /* Crear un elemento input temporal */
         let inputTemp = document.createElement("input");
         inputTemp.setAttribute("value", textoCopiado);
         document.body.appendChild(inputTemp);
